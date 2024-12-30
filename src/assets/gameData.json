@@ -1,0 +1,172 @@
+{
+  "bo1": {
+    "gameTitle": "Black Ops 1",
+    "gameImage": "./games/bo1.jpg",
+    "gameSlug": "/bo1/",
+    "zombieMaps": [
+      {
+        "mapName": "Moon",
+        "mapImage": "./maps/moon.png",
+        "mapSlug": "/map/paris/",
+        "mapData": {
+          "solvers": [
+            {
+              "solverName": "Solver 1",
+              "solverImage": "/solvers/citadel_symbols.webp",
+              "solverSlug": "/solver/solver1/",
+              "solverData": { "images": [] }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "bo2": {
+    "gameTitle": "Black Ops 2",
+    "gameImage": "./games/bo2.png",
+    "gameSlug": "/bo2/",
+    "zombieMaps": [
+      {
+        "mapName": "Origins",
+        "mapImage": "./maps/origins.png",
+        "mapSlug": "/map/origins/",
+        "mapData": {
+          "solvers": [
+            {
+              "solverName": "Solver 1",
+              "solverImage": "./solvers/solver1.png",
+              "solverSlug": "/solver/solver1/",
+              "solverData": { "images": [] }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "bo3": {
+    "gameTitle": "Black Ops 3",
+    "gameImage": "./games/bo3.jpg",
+    "gameSlug": "/bo3/",
+    "zombieMaps": [
+      {
+        "mapName": "Der Eisendrache",
+        "mapImage": "./maps/der-eisendrache.png",
+        "mapSlug": "/map/der-eisendrache/",
+        "mapData": {
+          "solvers": [
+            {
+              "solverName": "Solver 1",
+              "solverImage": "./solvers/solver1.png",
+              "solverSlug": "/solver/solver1/",
+              "solverData": { "images": [] }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "bo4": {
+    "gameTitle": "Black Ops 4",
+    "gameImage": "./games/bo4.jpg",
+    "gameSlug": "/bo4/",
+    "zombieMaps": [
+      {
+        "mapName": "Blood of the Dead",
+        "mapImage": "./maps/botd.png",
+        "mapSlug": "/map/botd/",
+        "mapData": {
+          "solvers": [
+            {
+              "solverName": "Solver 1",
+              "solverImage": "./solvers/solver1.png",
+              "solverSlug": "/solver/solver1/",
+              "solverData": { "images": [] }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "bo5": {
+    "gameTitle": "Cold War Zombies",
+    "gameImage": "./games/bo5.jpg",
+    "gameSlug": "/bo5/",
+    "zombieMaps": [
+      {
+        "mapName": "Game sucks idk",
+        "mapImage": "./maps/asdf.png",
+        "mapSlug": "/map/asdf/",
+        "mapData": {
+          "solvers": [
+            {
+              "solverName": "Solver 1",
+              "solverImage": "./solvers/solver1.png",
+              "solverSlug": "/solver/solver1/",
+              "solverData": { "images": [] }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "bo6": {
+    "gameTitle": "Black Ops 6",
+    "gameImage": "./games/bo6.png",
+    "gameSlug": "/bo6/",
+    "zombieMaps": [
+      {
+        "mapName": "Citadel Des Morts",
+        "mapImage": "/maps/castlebo6.webp",
+        "mapSlug": "/map/citadel/",
+        "mapData": {
+          "solvers": [
+            {
+              "solverName": "Citadel Bar Symbols",
+              "solverImage": "/solvers/citadel_symbols.webp",
+              "solverSlug": "/solvers/bo6/citadel-symbols/",
+              "solverData": {
+                "images": [
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/6/6b/Symbol_1.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/f/f3/Symbol_2.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/e/e8/Symbol_3.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/4/40/Symbol_4.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/a/a6/Symbol_5.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/9/9d/Symbol_6.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/4/46/Symbol_7.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/3/36/Symbol_8.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/0/04/Symbol_9.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/5/57/Symbol_10.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/9/92/Symbol_11.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/c/c5/Symbol_12.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/3/36/Symbol_13.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/a/a4/Symbol_14.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/a/a1/Symbol_15.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/1/1d/Symbol_16.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/9/9d/Symbol_17.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/5/50/Symbol_18.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/4/4c/Symbol_19.png?width=325",
+                  "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/7/7c/Symbol_20.png?width=325"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "mapName": "Terminus",
+        "mapImage": "/maps/island.jpg",
+        "mapSlug": "/map/terminus/",
+        "mapData": {
+          "solvers": [
+            {
+              "solverName": "Solver 1",
+              "solverImage": "/solvers/citadel_symbols.webp",
+              "solverSlug": "/solvers/bo6/citadel-symbols/",
+              "solverData": { "images": [] }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

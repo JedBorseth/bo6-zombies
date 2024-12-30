@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import mapData from "../assets/gameData.json";
+export function getStaticPaths() {
+  return [
+    { params: { game: "bo1" } },
+    { params: { game: "bo2" } },
+    { params: { game: "bo3" } },
+    { params: { game: "bo4" } },
+    { params: { game: "bo5" } },
+    { params: { game: "bo6" } },
+  ];
+}
+
+const game = Astro.params.game as keyof typeof mapData;
+const gameData = mapData[game];
+if (!gameData) {
+  return new Response("Not found", { status: 404 });
+}
+---
+
+<Layout>
+  <h1 class="text-center">{gameData.gameTitle}</h1>
+  <div class="flex flex-wrap justify-center gap-2 w-full">
+    {
+      gameData.zombieMaps.map((map) => (
+        <a href={map.mapSlug}>
+          <img
+            src={map.mapImage}
+            alt={map.mapName}
+            height="100%"
+            class="object-cover w-full transition-all object-[0%] hover:object-[50%] ease-out duration-500 cursor-pointer"
+          />
+        </a>
+      ))
+    }
+  </div>
+</Layout>

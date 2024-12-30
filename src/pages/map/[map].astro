@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import gameData from "../../assets/gameData.json";
+import { map } from "astro:schema";
+export function getStaticPaths() {
+  return [
+    { params: { map: "citadel" } },
+    { params: { map: "terminus" } },
+    { params: { map: "moon" } },
+    { params: { map: "origins" } },
+    { params: { map: "der-eisendrache" } },
+    { params: { map: "botd" } },
+    { params: { map: "asdf" } },
+  ];
+}
+
+// find map just by slug
+const findMapData = (mapSlug: string) => {
+  for (const gameKey in gameData) {
+    const game = gameData[gameKey as keyof typeof gameData];
+    const zombieMaps = game.zombieMaps;
+    for (const map of zombieMaps) {
+      if (map.mapSlug === mapSlug) {
+        return map;
+      }
+    }
+    // If no match is found, continue to the next game
+    continue;
+  }
+
+  return null; // Return null if no match is found
+};
+
+const path = Astro.url.pathname as string;
+const mapData = findMapData(path);
+if (!mapData) {
+  return new Response("Not found", { status: 404 });
+}
+---
+
+<Layout>
+  <h1 class="text-center">{mapData.mapName}</h1>
+  <div class="flex flex-wrap justify-center gap-2 w-full">
+    {
+      mapData.mapData.solvers.map((solver) => (
+        <a href={solver.solverSlug}>
+          <img src={solver.solverImage} alt={solver.solverName} height="100%" />
+        </a>
+      ))
+    }
+  </div>
+</Layout>

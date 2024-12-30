@@ -1,0 +1,23 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+import gameData from "../../../assets/gameData.json";
+import CitadelSolver from "../../../components/CitadelSolver";
+
+const map = gameData.bo6.zombieMaps.find(
+  (map) => map.mapSlug === "/map/citadel/"
+);
+if (!map) {
+  return new Response("could not find map", { status: 404 });
+}
+const solver = map.mapData.solvers.find(
+  (solver) => solver.solverSlug === "/solvers/bo6/citadel-symbols/"
+);
+if (!solver) {
+  return new Response("could not find solver", { status: 404 });
+}
+---
+
+<Layout>
+  <CitadelSolver client:load />
+</Layout>

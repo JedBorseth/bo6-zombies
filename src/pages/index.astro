@@ -1,11 +1,46 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Game from "../components/Game.astro";
+import Map from "../components/Map.astro";
+import Layout from "../layouts/Layout.astro";
+import gameData from "../assets/gameData.json";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <div
+    class="flex items-center justify-evenly h-screen w-[300vw] gap-2 bg-black"
+  >
+    <Game
+      mapTitle={gameData.bo1.gameTitle}
+      mapImage={gameData.bo1.gameImage}
+      mapSlug={gameData.bo1.gameSlug}
+    />
+    <Game
+      mapTitle={gameData.bo2.gameTitle}
+      mapImage={gameData.bo2.gameImage}
+      mapSlug={gameData.bo2.gameSlug}
+    />
+    <Game
+      mapTitle={gameData.bo3.gameTitle}
+      mapImage={gameData.bo3.gameImage}
+      mapSlug={gameData.bo3.gameSlug}
+    />
+    <Game
+      mapTitle={gameData.bo4.gameTitle}
+      mapImage={gameData.bo4.gameImage}
+      mapSlug={gameData.bo4.gameSlug}
+    />
+    <Game
+      mapTitle={gameData.bo5.gameTitle}
+      mapImage={gameData.bo5.gameImage}
+      mapSlug={gameData.bo5.gameSlug}
+    />
+    <Game
+      mapTitle={gameData.bo6.gameTitle}
+      mapImage={gameData.bo6.gameImage}
+      mapSlug={gameData.bo6.gameSlug}
+    />
+  </div>
 </Layout>

@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { map: "citadel" } },
+    { params: { map: "moon" } },
+    { params: { map: "origins" } },
+    { params: { map: "der-eisendrache" } },
+    { params: { map: "botd" } },
+    { params: { map: "asdf" } },
+  ];
+}
+---
+
+<Layout> <div></div></Layout>

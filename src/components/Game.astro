@@ -1,0 +1,23 @@
+---
+import Image from "astro/components/Image.astro";
+
+const mapTitle = Astro.props.mapTitle;
+const mapImage = Astro.props.mapImage;
+const mapSlug = Astro.props.mapSlug;
+---
+
+<div class="h-full flex items-center w-full justify-center relative group">
+  <h1
+    class="z-10 bg-white bg-opacity-15 absolute top-0 w-max text-center group-hover:opacity-100 opacity-0 transition-all duration-700 ease-in p-1 rounded-md mt-1"
+  >
+    {mapTitle}
+  </h1>
+  <a href={mapSlug}>
+    <img
+      src={mapImage}
+      alt={mapTitle}
+      height="100%"
+      class="object-cover sticky top-0 left-0 h-screen w-full transition-all object-[0%] hover:object-[50%] ease-out duration-500 cursor-pointer"
+    />
+  </a>
+</div>
