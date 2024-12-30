@@ -1,7 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import gameData from "../../assets/gameData.json";
-import { map } from "astro:schema";
 export function getStaticPaths() {
   return [
     { params: { map: "citadel" } },
