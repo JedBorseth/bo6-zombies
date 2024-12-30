@@ -43,3 +43,19 @@ import gameData from "../assets/gameData.json";
     />
   </div>
 </Layout>
+
+<script is:inline>
+  // Check if the device is touch-capable
+  const checkTouch = () => {
+    const isTouchCapable =
+      "ontouchstart" in window ||
+      (window.DocumentTouch && document instanceof window.DocumentTouch) ||
+      navigator.maxTouchPoints > 0 ||
+      window.navigator.msMaxTouchPoints > 0;
+    if (!isTouchCapable)
+      alert(
+        "This site is designed for a touch device. The UI will look wacky on your desktop."
+      );
+  };
+  checkTouch();
+</script>
