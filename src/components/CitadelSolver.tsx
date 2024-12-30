@@ -80,7 +80,14 @@ const App: React.FC = () => {
   const solver = map.mapData.solvers.find(
     (solver: { solverSlug: string }) =>
       solver.solverSlug === "/solvers/bo6/citadel-symbols/"
-  );
+  ) as {
+    solverName: string;
+    solverImage: string;
+    solverSlug: string;
+    solverData: {
+      images: string[];
+    };
+  };
   if (!solver) {
     return <div>error</div>;
   }

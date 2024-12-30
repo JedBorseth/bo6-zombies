@@ -148,6 +148,35 @@
                   "https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-6/7/7c/Symbol_20.png?width=325"
                 ]
               }
+            },
+            {
+              "solverName": "Raven Sword",
+              "solverImage": "/solvers/raven.jpg",
+              "solverSlug": "/solvers/bo6/raven-sword/",
+              "solverData": {
+                "images": [
+                  {
+                    "src": "https://img.game8.co/4060065/885adefdf1bdf0853ec7b3eb18881d5d.png/show",
+                    "name": "Jaws"
+                  },
+                  {
+                    "src": "https://img.game8.co/4060067/31238ead3abb8b8623261d9f94081dff.png/show",
+                    "name": "2 Bird Skulls"
+                  },
+                  {
+                    "src": "https://img.game8.co/4060701/bede4ec15dccbb0a8324bc0bd12d3e8e.png/show",
+                    "name": "Scorpion"
+                  },
+                  {
+                    "src": "https://img.game8.co/4060066/8f8251d82de9fc89fded3c5b2e1c996c.png/show",
+                    "name": "Fish"
+                  },
+                  {
+                    "src": "https://img.game8.co/4060234/3552b42e312d7630c785e13a84f6eb81.png/show",
+                    "name": "Horn"
+                  }
+                ]
+              }
             }
           ]
         }

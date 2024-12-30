@@ -38,14 +38,25 @@ if (!mapData) {
 ---
 
 <Layout>
-  <h1 class="text-center">{mapData.mapName}</h1>
+  <h1 class="text-center text-4xl">{mapData.mapName}</h1>
   <div class="flex flex-wrap justify-center gap-2 w-full">
     {
       mapData.mapData.solvers.map((solver) => (
         <a href={solver.solverSlug}>
-          <img src={solver.solverImage} alt={solver.solverName} height="100%" />
+          <img
+            src={solver.solverImage}
+            alt={solver.solverName}
+            height="100%"
+            width="640"
+          />
         </a>
       ))
     }
   </div>
+  <a
+    href="javascript:history.back()"
+    class="fixed bottom-4 left-4 bg-red-500 rounded p-4 text-white"
+  >
+    <button>Back</button></a
+  >
 </Layout>
