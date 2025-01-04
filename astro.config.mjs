@@ -25,7 +25,7 @@ export default defineConfig({
         description: "Astro PWA Built by Jed Borseth",
         theme_color: "#30E130",
         background_color: "#ffffff",
-        display: "fullscreen",
+        display: "standalone",
         icons: [
           {
             src: "/favicons/favicon-192x192.png",
