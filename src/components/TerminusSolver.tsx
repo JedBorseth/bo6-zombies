@@ -96,7 +96,7 @@ const TerminusSolver: React.FC = () => {
   };
 
   return (
-    <main className="flex flex-wrap gap-4 justify-center h-full">
+    <main className="flex flex-wrap gap-4 justify-center h-full p-1">
       <div className="p-4 bg-neutral-200 rounded gap-4 grid grid-cols-3">
         <h1 className="col-span-3 text-center">First Symbol</h1>
         {[1, 2, 3, 4, 5, 6].map((num) => (
@@ -135,7 +135,7 @@ const TerminusSolver: React.FC = () => {
           </button>
         ))}
       </div>
-      <div className="p-4 bg-neutral-300 rounded w-full max-w-md h-1/3">
+      <div className="p-4 bg-neutral-300 rounded w-full max-w-md">
         <h2 className="text-center font-bold">Solutions</h2>
         <p className="text-center">
           Equation 1: {solutions.equation1 ?? "Select all symbols"}
@@ -147,6 +147,9 @@ const TerminusSolver: React.FC = () => {
           Equation 3: {solutions.equation3 ?? "Select all symbols"}
         </p>
       </div>
+      <a href="./" className="fixed bottom-4 right-4 rounded p-4 bg-indigo-200">
+        <button>Reset</button>
+      </a>
     </main>
   );
 };
