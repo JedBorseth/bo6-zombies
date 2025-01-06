@@ -28,15 +28,15 @@
     "zombieMaps": [
       {
         "mapName": "Origins",
-        "mapImage": "./maps/origins.png",
+        "mapImage": "../maps/dig64.jpg",
         "mapSlug": "/map/origins/",
         "mapData": {
           "solvers": [
             {
-              "solverName": "Solver 1",
-              "solverImage": "./solvers/solver1.png",
-              "solverSlug": "/solver/solver1/",
-              "solverData": { "images": [] }
+              "solverName": "Ultimate Staff Image",
+              "solverImage": "/solvers/staffupgrade.jpg",
+              "solverSlug": "/solvers/bo3/staff-upgrade/",
+              "solverData": { "images": [""] }
             }
           ]
         }
@@ -50,15 +50,30 @@
     "zombieMaps": [
       {
         "mapName": "Der Eisendrache",
-        "mapImage": "./maps/der-eisendrache.png",
+        "mapImage": "../maps/castlebo3.webp",
         "mapSlug": "/map/der-eisendrache/",
         "mapData": {
           "solvers": [
             {
-              "solverName": "Solver 1",
-              "solverImage": "./solvers/solver1.png",
-              "solverSlug": "/solver/solver1/",
+              "solverName": "Der Eisendrache Bow Stuff",
+              "solverImage": "/solvers/castle-explode.jpg",
+              "solverSlug": "/solvers/bo3/der-eisendrache/",
               "solverData": { "images": [] }
+            }
+          ]
+        }
+      },
+      {
+        "mapName": "Origins",
+        "mapImage": "../maps/dig64.jpg",
+        "mapSlug": "/map/origins/",
+        "mapData": {
+          "solvers": [
+            {
+              "solverName": "Ultimate Staff Image",
+              "solverImage": "/solvers/staffupgrade.jpg",
+              "solverSlug": "/solvers/bo3/staff-upgrade/",
+              "solverData": { "images": [""] }
             }
           ]
         }
