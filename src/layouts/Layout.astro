@@ -9,14 +9,32 @@ import { ClientRouter } from "astro:transitions";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <title>COD - Zombies App</title>
     <ClientRouter />
-    <script is:inline src="/registerSW.js"></script>
-    <link rel="manifest" href="/manifest.webmanifest" />
+    {import.meta.env.PROD && <script is:inline src="/registerSW.js" />}
+    {
+      import.meta.env.PROD && (
+        <link rel="manifest" href="/manifest.webmanifest" />
+      )
+    }
   </head>
   <body>
     <slot />
-  </body>
+    {
+      Astro.url.pathname !== "/" && (
+        <a
+          href="javascript:history.back()"
+          class="fixed bottom-4 left-4 bg-red-500 rounded p-4 text-white"
+        >
+          <button>Back</button>
+        </a>
+      )
+    }
+  </body><!-- 
+  
+  This app has some yucky styling. I spent very little time on it so deal with it.  :)
+  
+  -->
 </html>
 
 <style>

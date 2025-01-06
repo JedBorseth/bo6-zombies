@@ -1,6 +1,6 @@
 import { useState } from "react";
 import gameData from "../assets/gameData.json";
-export const RavenSword: React.FC = () => {
+export default function RavenSword() {
   const [clicked, setClicked] = useState("");
   const map = gameData.bo6.zombieMaps.find(
     (map: { mapSlug: string }) => map.mapSlug === "/map/citadel/"
@@ -30,21 +30,21 @@ export const RavenSword: React.FC = () => {
     switch (statue) {
       case "Jaws":
         return (
-          <div className="grid place-items-center h-screen">
+          <div className="flex justify-center">
             <img src="/solvers/raven-jaw.jpg" alt="jaws" className="w-3/4" />
           </div>
         );
         break;
       case "2 Bird Skulls":
         return (
-          <div className="grid place-items-center h-screen">
+          <div className="flex justify-center">
             <img src="/solvers/raven-skulls.jpg" alt="jaws" className="w-3/4" />
           </div>
         );
         break;
       case "Scorpion":
         return (
-          <div className="grid place-items-center h-screen">
+          <div className="flex justify-center">
             <img
               src="/solvers/raven-scorpion.jpg"
               alt="jaws"
@@ -55,14 +55,14 @@ export const RavenSword: React.FC = () => {
         break;
       case "Fish":
         return (
-          <div className="grid place-items-center h-screen">
+          <div className="flex justify-center">
             <img src="/solvers/raven-fish.jpg" alt="jaws" className="w-3/4" />
           </div>
         );
         break;
       case "Horn":
         return (
-          <div className="grid place-items-center h-screen">
+          <div className="flex justify-center">
             <img src="/solvers/raven-horn.jpg" alt="jaws" className="w-3/4" />
           </div>
         );
@@ -111,6 +111,4 @@ export const RavenSword: React.FC = () => {
       )}
     </>
   );
-};
-
-export default RavenSword;
+}

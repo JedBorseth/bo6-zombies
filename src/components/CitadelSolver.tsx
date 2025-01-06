@@ -34,12 +34,6 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
             </div>
           ))}
         </div>
-        <a
-          href="/solvers/bo6/citadel-symbols/"
-          className="fixed bottom-4 left-4 w-full"
-        >
-          <button className="bg-red-500 rounded p-4 text-white">Back</button>
-        </a>
       </div>
     );
   }

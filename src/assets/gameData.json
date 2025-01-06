@@ -189,9 +189,18 @@
           "solvers": [
             {
               "solverName": "Solver 1",
-              "solverImage": "/solvers/citadel_symbols.webp",
-              "solverSlug": "/solvers/bo6/citadel-symbols/",
-              "solverData": { "images": [] }
+              "solverImage": "/solvers/terminus-nums.webp",
+              "solverSlug": "/solvers/bo6/terminus-numbers/",
+              "solverData": {
+                "images": [
+                  "https://terminus-calculator.github.io/images/symbols-01.jpeg",
+                  "https://terminus-calculator.github.io/images/symbols-02.jpeg",
+                  "https://terminus-calculator.github.io/images/symbols-03.jpeg",
+                  "https://terminus-calculator.github.io/images/symbols-04.jpeg",
+                  "https://terminus-calculator.github.io/images/symbols-05.jpeg",
+                  "https://terminus-calculator.github.io/images/symbols-06.jpeg"
+                ]
+              }
             }
           ]
         }

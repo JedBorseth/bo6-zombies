@@ -23,7 +23,7 @@ export default defineConfig({
         name: "COD - Zombies Helper App",
         short_name: "Zombies Helper",
         description: "Astro PWA Built by Jed Borseth",
-        theme_color: "#30E130",
+        theme_color: "#ffffff",
         background_color: "#ffffff",
         display: "standalone",
         icons: [
